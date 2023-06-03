@@ -156,4 +156,4 @@ namespace offsets {
 	constexpr ::std::ptrdiff_t model_ambient_min = 0x5A1194;
 	constexpr ::std::ptrdiff_t set_abs_angles = 0x1E6D00;
 	constexpr ::std::ptrdiff_t set_abs_origin = 0x1E6B40;
-}
+}//end of offsets
