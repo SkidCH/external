@@ -14,7 +14,7 @@ int main() {
         const auto localPlayer = memory.Read<std::uintptr_t>(client + offsets::dwLocalPlayer);
         const auto glowObjectManager = memory.Read<std::uintptr_t>(client + offsets::dwGlowObjectManager);
         const auto& localHealth = memory.Read<std::int32_t>(localPlayer + offsets::m_iHealth);
-
+//Glow start
         for (auto i = 0; i < 64; ++i)
         {
             const auto entity = memory.Read<std::uintptr_t>(client + offsets::dwEntityList + i * 0x10);
@@ -32,8 +32,8 @@ int main() {
 
             memory.Write<bool>(glowObjectManagerOffset + 0x27, true);
             memory.Write<bool>(glowObjectManagerOffset + 0x28, true);
-        }
-
+        } //glow end
+//Trigger start
         if (!GetAsyncKeyState(VK_XBUTTON2)) {
             continue;
         }
@@ -65,7 +65,7 @@ int main() {
                     }
                 }
             }
-        }
+        }//Trigger end
     }
     return 0;
 }
