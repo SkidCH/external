@@ -28,7 +28,7 @@ int main() {
             memory.Write<float>(glowObjectManagerOffset + 0x8, 0.f); // red
             memory.Write<float>(glowObjectManagerOffset + 0xC, 0.f); // green
             memory.Write<float>(glowObjectManagerOffset + 0x10, 1.f); // blue
-            memory.Write<float>(glowObjectManagerOffset + 0x14, 0.6f); // Brightness
+            memory.Write<float>(glowObjectManagerOffset + 0x14, 1.f); // Brightness
 
             memory.Write<bool>(glowObjectManagerOffset + 0x27, true);
             memory.Write<bool>(glowObjectManagerOffset + 0x28, true);
